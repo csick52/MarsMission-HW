@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Mars Facts</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Press for info!</a></p>
+    </div>
+
+    <!-- Mars Listings -->
+    <div class="row" id="mars-listings">
+      <div class="col-md-12">
+        <h4 class="heading">The Facts:</h4>
+        <ul>
+          <li>{{listings.news_title}}</li>
+          <li>{{listings.news_p}}</li>
+          <li><img style="width:50%" src={{listings.featured_image_url}}></li>
+          <li>{{listings.mars_weather}}</li>
+          <li>{{listings.hemispheres[0].title}}</li>
+          <li><img style="width:50%" src={{listings.hemispheres[0].image_url}}></li>
+          <li>{{listings.hemispheres[1].title}}</li>
+          <li><img style="width:50%" src={{listings.hemispheres[1].image_url}}></li>
+          <li>{{listings.hemispheres[2].title}}</li>
+          <li><img style="width:50%" src={{listings.hemispheres[2].image_url}}></li>
+          <li>{{listings.hemispheres[3].title}}</li>
+          <li><img style="width:50%" src={{listings.hemispheres[3].image_url}}></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+
